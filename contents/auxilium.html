@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MigrateDev</title>
+    <script>
+        // Função para iniciar a síntese de voz
+        function iniciarSinteseVoz() {
+            const textoParaSintetizar = document.body.innerText;
+            const utterance = new SpeechSynthesisUtterance(textoParaSintetizar);
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/auxilium.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- Colocar logo da migratezinha :3 -->
+            <img src="../../assets/img/logo-migrate.svg" alt="Logo MigrateDev">
+            <h1>MigrateDev</h1>
+        </div>
+
+        <nav>
+            <button id="menu-mobile">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul id="menu-mobile-container">
+                <li><a href="../index.html">Home</a></li>
+                <li id="dropdown-content" style="color: #e9e0e0;">Conteúdos</li>
+                <div id="dropdown">
+                    <ul>
+                        <li><a href="./auxilium.html" style="color: #91CF59;">Auxilium</a></li>
+                        <li><a href="./forcompany.html">ForCompany</a></li>
+                    </ul>
+                </div>
+                <li><a href="../about.html">Sobre</a></li>
+                <li><a href="../index.html#contato">Contatos</a></li>
+            </ul>
+        </nav>
+        <script src="../../assets/js/header.js"></script>
+    </header>
+
+    <main>
+        <section class="main-header">
+            <div>
+                <h1>Auxilium <button id="voz" onclick="iniciarSinteseVoz()">Modo Acessibilidade</button> </h1>
+            </div>
+            <a href="../index.html">
+                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_259_530)">
+                        <path
+                            d="M16.5 27C14.0277 27 11.611 26.2669 9.55538 24.8933C7.49976 23.5198 5.89761 21.5676 4.95151 19.2835C4.00541 16.9995 3.75787 14.4861 4.24019 12.0614C4.72251 9.6366 5.91302 7.40931 7.66118 5.66116C10.0054 3.31696 13.1848 2 16.5 2C19.8152 2 22.9946 3.31696 25.3388 5.66116C27.683 8.00537 29 11.1848 29 14.5C29 17.8152 27.683 20.9946 25.3388 23.3388C24.1808 24.5032 22.8033 25.4263 21.2861 26.0547C19.769 26.6832 18.1422 27.0044 16.5 27ZM16.5 3.66669C10.5265 3.66669 5.66671 8.52652 5.66671 14.5C5.66671 20.4735 10.5265 25.3333 16.5 25.3333C22.4735 25.3333 27.3333 20.4735 27.3333 14.5C27.3333 8.52652 22.4735 3.66669 16.5 3.66669Z"
+                            fill="#39C369" />
+                        <path
+                            d="M17.994 20.9226L11.5714 14.5001L17.994 8.07758L19.1724 9.25601L13.9284 14.5001L19.1724 19.7442L17.994 20.9226Z"
+                            fill="#39C369" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_259_530" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="2" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_259_530" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_259_530" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </a>
+
+        </section>
+
+        <article>
+            <h2>Sobre</h2>
+            
+            <p>Auxilium, o aplicativo revolucionário de doações, conecta corações para causar impacto real. Com uma abordagem inovadora, o Auxilium não apenas facilita doações, mas também estabelece conexões significativas entre doadores e beneficiários. Doação em tempo real, rastreamento transparente e a capacidade de acompanhar o impacto - o Auxilium une indivíduos em uma jornada altruística, onde cada contribuição conta. Conecte-se, doe com propósito e acompanhe a mudança acontecendo. Auxilium, onde a generosidade encontra a transparência.</p>
+            <p>Descubra uma abordagem integrada para o seu bem-estar com as funcionalidades exclusivas do Auxilium: </p>
+            <p>
+            <ul>
+                <li>Listagem de indivíduos de baixa-renda;
+                </li>
+
+                <li>Listagem de instituições;</li>
+
+                <li>
+                    Possibilidade de doações por meio de um filtro;
+                </li>
+
+                <li>
+                    Capacidade de conexão online entre um indivíduo de baixa renda e a instituição de sua escolha;
+                </li>
+                <li>
+                    Criação e divulgação de eventos de caridade;
+                </li>
+            </ul>
+            </p>
+        </article>
+
+        <figure>
+            <img src="../../assets/img/contents/donate.svg" alt="Imagem ilustrativa de doação generosa">
+            <figcaption>Imagem 1: Ilustração de doação generosa</figcaption>
+        </figure>
+
+        <article>
+            <h2>Funcionamento</h2>
+            <p>O Auxilium opera incessantemente para facilitar suas boas ações. Disponível 24 horas por dia, o aplicativo está ao seu alcance sempre que você deseja fazer a diferença. Compatível com Android e iOS, o Auxilium oferece download gratuito, proporcionando uma experiência acessível e pronta para inspirar mudanças positivas a qualquer hora, em qualquer lugar.
+            </p>
+            <p>
+                A seguir, apresentamos as ferramentas disponíveis a todo momento no Auxilium:
+            </p>
+
+            <ul>
+                <li>Totens de auto atendimento;</li> 
+
+                <li>Suporte online;</li>
+                
+                <li>Feed de histórias Inspiradoras;</li>
+                
+                <li>Chat Interativo para conectar doadores e beneficiários;</li>
+
+                <li>Notificações em tempo real para acompanhar o impacto das doações;</li>
+            </ul>
+
+
+        </article>
+
+        <figure>
+            <img src="../../assets/img/contents/localizaçãoImage.png" alt="Monitando Eventos pelo celular">
+            <figcaption>Imagem 2: Ilustração do Monitoramento de Eventos</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <h3>&copy; 2023 Migrate Dev. Todos os direitos reservados.</h3>
+    </footer>
+</body>
+
+</html>

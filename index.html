@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MigrateDev</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- Colocar logo da migratezinha :3 -->
+            <img src="./assets/img/logo-migrate.svg" alt="Logo MigrateDev"> 
+            <h1>MigrateDev</h1>
+        </div>
+
+        <nav>
+            <button id="menu-mobile">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul id="menu-mobile-container">
+                <li><a href="index.html" style="color: #e9e0e0;">Home</a></li>
+                <li id="dropdown-content">Conteúdos</li>
+                <div id="dropdown">
+                    <ul>
+                        <li><a href="contents/auxilium.html">Auxilium</a></li>
+                        <li><a href="contents/forcompany.html">ForCompany</a></li>
+                    </ul>
+                </div>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CARROSSEL YURI -->
+        <div class="slider">
+            <div class="slides">
+            <!-- Botões Radio -->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!-- Fim Botões Radio -->
+
+            <!-- Slide Imagens -->
+            <div class="slide first">
+                <img src="assets/img/slider/migratedev.png" alt="Imagem 1" />
+            </div>
+            <div class="slide">
+                <img src="assets/img/slider/fooddonation.png" alt="Imagem 2" />
+            </div>
+            <div class="slide">
+                <img src="assets/img/slider/donation.png" alt="Imagem 3" />
+            </div>
+            <!-- Fim Slide Imagens -->
+
+            <!-- Auto Navegação -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            </div>
+
+            <!-- Navegação Manual -->
+            <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        <!-- FIM CARROSSEL -->
+
+        <section class="content">
+            <section class="content-exercicios right">
+                <img src="./assets/img/illustrations/charity-animate.svg" alt="Animação Doação">
+                <div class="content-text">
+                    <h2>Auxilium</h2>
+                    <p>Auxilium, a ponte entre corações e causas nobres. Conectamos pessoas e transformamos vidas. Faça parte, faça a diferença.</p>
+                    <button class="content-cta-btn">
+                        <!-- trocar esse href -->
+                        <a href="contents/auxilium.html">Conhecer</a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="content-alimentacao left">
+                <img src="./assets/img/illustrations/programming-animate.svg" alt="Animação ForCompany">
+                <div class="content-text">
+                    <h2>ForCompany</h2>
+                    <p>ForCompany, apresenta ForEstatec, simplificando o controle de estágios. Transforme gestão eficaz de estágios. Faça um estágio.</p>
+                    <button class="content-cta-btn">
+                        <!-- trocar esse href -->
+                        <a href="contents/forcompany.html">Conhecer</a>
+                    </button>
+                </div>
+            </section>
+
+    </main>
+
+    <footer id="contato">
+        <div class="footer-main">
+            <section class="contato">
+                <h3>Entre em contato:</h3>
+                <h4>Vamos nos conectar? Nos contate em</h4>
+                <section class="contato-icons">
+                    <!-- Seção do github, se quiser criar um e adicionar -->
+                    <!-- <a href="https://github.com/ContaMigrateDev" target="_blank">
+                        <img src="./assets/img/icons/github-icon.svg" alt="Icone Github"> -->
+                    </a>
+                    <a href="https://mailto:migratedevrh@gmail.com" target="_blank">
+                        <img src="./assets/img/icons/email-icon.svg" alt="Icone Email">
+                    </a>
+                    <!-- Adicionar instagram da migratedevzinha -->
+                    <a href="https://www.instagram.com/Instagram da MigrateDev/" target="_blank">
+                        <img src="./assets/img/icons/instagram-icon.svg" alt="Icone Instagram">
+                    </a>
+                </section>
+            </section>
+            <form class="contato-form" method="POST" action="mailto:migratedevrh@gmail.com" enctype="text/plain">
+                <input autocomplete="off" type="text" name="Nome: " id="name" placeholder="Seu nome: ">
+                <input autocomplete="off" type="email" name="Email: " id="email" placeholder="Seu email: " required>
+                <textarea name="Mensagem: " id="mensagem" cols="25" rows="10" placeholder="Sua mensagem: " required></textarea>
+                <button type="submit" value="Enviar">
+                    <img src="./assets/img/icons/paper-plane-icon.svg">
+                    enviar
+                </button>
+            </form>
+        </div>
+
+        <h5>&copy; 2023 Migrate Dev. Todos os direitos reservados.</h5>
+    </footer>
+    <script src="./assets/js/header.jS"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

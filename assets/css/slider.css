@@ -1,0 +1,100 @@
+/* CARROSSEL */
+.slider {
+  margin: 0 auto;
+  width: 90vw;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img {
+  width: 90vw;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 90vw;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+/* Seleciona todos, menos o último elemento */
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+/* NAVEGAÇÃO MANUAL DO CARROSSEL */
+/* Quando estiver ativo, se for da class First, margem 0 */
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.navigation-auto div {
+  border: 2px solid #1a557c;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 90vw;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Seleciona todos, menos o último elemento */
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Quando estiver ativo, e for da class navigation-auto e auto-btn1, fundo branco */
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}

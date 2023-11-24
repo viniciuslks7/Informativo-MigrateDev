@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MigrateDev</title>
+    <script>
+        // Função para iniciar a síntese de voz
+        function iniciarSinteseVoz() {
+            const textoParaSintetizar = document.body.innerText;
+            const utterance = new SpeechSynthesisUtterance(textoParaSintetizar);
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/forcompany.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- Colocar logozinha -->
+            <img src="../../assets/img/logo-migrate.svg" alt="Logo MigrateDev">
+            <h1>MigrateDev</h1>
+        </div>
+
+        <nav>
+            <button id="menu-mobile">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul id="menu-mobile-container">
+                <li><a href="../index.html">Home</a></li>
+                <li id="dropdown-content" style="color: #e9e0e0;">Conteúdos</li>
+                <div id="dropdown">
+                    <ul>
+                        <li><a href="./auxilium.html">Auxilium</a></li>
+                        <li><a href="./forcompany.html" style="color: #91CF59;">ForCompany</a></li>
+                    </ul>
+                </div>
+                <li><a href="../about.html">Sobre</a></li>
+                <li><a href="../index.html#contato">Contatos</a></li>
+            </ul>
+        </nav>
+        <script src="../../assets/js/header.js"></script>
+    </header>
+
+    <main>
+        <section class="main-header">
+            <div>
+                <h1>ForCompany <button id="voz" onclick="iniciarSinteseVoz()">Modo Acessibilidade</button></h1>
+            </div>
+            <a href="../index.html">
+                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_259_530)">
+                        <path
+                            d="M16.5 27C14.0277 27 11.611 26.2669 9.55538 24.8933C7.49976 23.5198 5.89761 21.5676 4.95151 19.2835C4.00541 16.9995 3.75787 14.4861 4.24019 12.0614C4.72251 9.6366 5.91302 7.40931 7.66118 5.66116C10.0054 3.31696 13.1848 2 16.5 2C19.8152 2 22.9946 3.31696 25.3388 5.66116C27.683 8.00537 29 11.1848 29 14.5C29 17.8152 27.683 20.9946 25.3388 23.3388C24.1808 24.5032 22.8033 25.4263 21.2861 26.0547C19.769 26.6832 18.1422 27.0044 16.5 27ZM16.5 3.66669C10.5265 3.66669 5.66671 8.52652 5.66671 14.5C5.66671 20.4735 10.5265 25.3333 16.5 25.3333C22.4735 25.3333 27.3333 20.4735 27.3333 14.5C27.3333 8.52652 22.4735 3.66669 16.5 3.66669Z"
+                            fill="#39C369" />
+                        <path
+                            d="M17.994 20.9226L11.5714 14.5001L17.994 8.07758L19.1724 9.25601L13.9284 14.5001L19.1724 19.7442L17.994 20.9226Z"
+                            fill="#39C369" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_259_530" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="2" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_259_530" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_259_530" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </a>
+
+        </section>
+
+        <article>
+            <h2>Estatec</h2>
+            <p>Explore novas oportunidades profissionais e impulsione sua carreira com o ForCompany e sua aplicação dedicada, o ForEstatec. Este programa revolucionário de estágios, criado especialmente para alunos da ETEC e FATEC, oferece uma abordagem inovadora e personalizada para aprimorar sua jornada acadêmica e profissional.</p>
+            <p>Confira as possibilidades do ForEstatec:</p>
+            <ul>
+                <li>Analise suas notas automaticamente para garantir que você esteja elegível para as melhores oportunidades de estágio;
+                </li>
+
+                <li>Configure o aplicativo para enviar automaticamente seu currículo pré-registrado assim que uma nova vaga que corresponda ao seu perfil estiver disponível, economizando seu tempo e aumentando suas chances de sucesso;</li>
+
+                <li>
+                    Explore vagas de estágio filtradas de acordo com seu curso, simplificando sua busca por oportunidades alinhadas com seus objetivos acadêmicos e profissionais;
+                </li>
+
+                <li>
+                    Mantenha-se atualizado sobre o status de seus estágios em andamento, recebendo notificações e informações relevantes para uma experiência mais transparente e eficaz;
+                </li>
+                <li>
+                    Professores têm acesso a ferramentas dedicadas para monitorar o progresso dos alunos, facilitando a orientação e o suporte durante todo o processo de estágio;
+                </li>
+            </ul>
+        </article>
+
+        <figure>
+            <img src="../../assets/img/contents/animaçãoFC.svg" alt="Imagem de pessoa correndo atrás dos sonhos">
+            <figcaption>Imagem 1: Imagem ilustrativa de pessoa correndo atrás dos sonhos</figcaption>
+        </figure>
+
+        <article>
+            <h2>ForNow</h2>
+            <p>A correria do dia a dia muitas vezes nos faz sentir como se estivéssemos perdendo o controle sobre nossas agendas e rotinas. Pensando nisso, a ForCompany desenvolveu o aplicativo ForNow, uma solução inovadora para auxiliar pessoas com dificuldades em gerenciar seus horários e promover uma vida mais equilibrada.</p>
+            <p>Confira abaixo algumas funcionalidades desse aplicativo: 
+            </p>
+            <ul>
+                <li>O ForNow permite criar uma rotina de treino adaptada ao perfil de um profissional da saúde. Seja você um atleta em busca de um programa de exercícios específico ou alguém que deseja melhorar sua saúde geral, o aplicativo personaliza planos de treino que se alinham às suas necessidades e objetivos;
+                </li>
+
+                <li>Para aqueles que buscam aprimorar seus conhecimentos, o ForNow oferece um sistema único de integração de material de estudo. Os usuários podem associar seus planos de estudo a professores especializados e videoaulas relevantes, proporcionando uma experiência de aprendizado completa e alinhada com sua rotina diária;</li>
+
+                <li>
+                    Reconhecendo a importância do bem-estar social, o ForNow inclui funcionalidades para promover interações sociais positivas. Os usuários podem agendar momentos de lazer, encontros com amigos e atividades que contribuam para o seu equilíbrio emocional, garantindo uma vida mais saudável e feliz;
+                </li>
+
+                <li>
+                    O aplicativo oferece a possibilidade de agendar sessões de acompanhamento psicológico com profissionais qualificados. Isso permite que os usuários tenham acesso a suporte emocional personalizado, contribuindo para a gestão do estresse, ansiedade e outros aspectos emocionais que possam afetar sua rotina diária;
+                </li>
+                <li>
+                    A saúde não se resume apenas a exercícios físicos, por isso o ForNow inclui um recurso de acompanhamento nutricional. Usuários podem agendar consultas breves com profissionais de nutrição, personalizando planos alimentares que se integram de forma eficaz às suas rotinas ocupadas;
+                </li>
+            </ul>
+        </article>
+
+        <figure>
+            <img src="../../assets/img/contents/agendamentoNow.svg" alt="Imagem de pessoa com calendário">
+            <figcaption>Imagem 2: Imagem ilustrativa de pessoa com calendário</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <h3>&copy; 2023 Migrate Dev. Todos os direitos reservados.</h3>
+    </footer>
+</body>
+
+</html>
